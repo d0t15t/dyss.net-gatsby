@@ -3,7 +3,7 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
-<h1> align="center">
+<h1 align="center">
   Dyssembler / Isaac Bigsby Trogdon homepage built with Gatsby 4.
 <h2 align="center">
   Utilizing Gatsby minimal starter
