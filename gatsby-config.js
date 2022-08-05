@@ -1,31 +1,49 @@
 module.exports = {
   siteMetadata: {
-    title: `dyss.net`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `DYSSEMBLER / Isaac Bigsby Trogdon`,
+    siteUrl: `https://www.dyss.net`
   },
-  plugins: ["gatsby-plugin-styled-components", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": " UA-26808845-1"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    "gatsby-plugin-styled-components", 
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        "trackingId": " UA-26808845-1"
+      }
+    }, 
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+	short_name: "DYSS / IBT",
+	name: "DYSSEMBLER / Isaac Bigsby Trogdon",
+	start_url: "/",
+	display: "standalone",
+        icon: "src/images/favicon.ico",
+        //"icon": "src/images/icon.png"
+	include_favicon: false,
+      }
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    "gatsby-plugin-offline",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
     },
-    __key: "pages"
-  }]
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "pages",
+        "path": "./src/pages/"
+      },
+      __key: "pages"
+    },
+  ]
 };
