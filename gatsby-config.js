@@ -4,13 +4,27 @@ module.exports = {
     siteUrl: `https://www.dyss.net`
   },
   plugins: [
-    "gatsby-plugin-styled-components", 
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        "trackingId": " UA-26808845-1"
+        trackingIds: [
+          "G-WRR3VLQ2FD"
+        ],
+        pluginConfig: {
+          head: true
+         //respectDNT: true,
+         // Avoids sending pageview hits from custom paths
+         //exclude: ["/preview/**", "/do-not-track/me/too/"],
+        }
       }
-    }, 
+    },
+    "gatsby-plugin-styled-components", 
+    //{
+    ///  resolve: 'gatsby-plugin-google-analytics',
+    //  options: {
+    //    "trackingId": " UA-26808845-1"
+    //  }
+    //}, 
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {

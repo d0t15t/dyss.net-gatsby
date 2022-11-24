@@ -140,8 +140,8 @@ const IndexPage = () => {
       </h1>
       <p style={paragraphStyles}>
 	<span style={hidden}>Dyssembler</span>
-	is the moniker for projects by <strong>Isaac Bigsby Trogdon</strong>. 
-	It has been a radio show, record label, and various music/party events. <strong>IBT</strong> lives and works as a web-programmer in Berlin. <span role="img" aria-label="Sunglasses smiley emoji">
+	is the moniker for projects by <strong>Isaac Bigsby Trogdon</strong>. <br/> 
+	It has been a radio show, record label, and various music/party events. <br/><strong>IBT</strong> lives and works as a web-programmer in Berlin. <span role="img" aria-label="Peace-sign with hand emoji">
           ✌️
         </span></p>
 
